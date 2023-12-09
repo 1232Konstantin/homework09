@@ -23,14 +23,7 @@ target_include_directories(libasync
 
 target_link_libraries(async PRIVATE libasync)
 
-if (MSVC)
-    target_compile_options(async PRIVATE
-    /std:c++17
-    )
 
-else ()
-
-endif()
 
 install(TARGETS async RUNTIME DESTINATION bin)
 
