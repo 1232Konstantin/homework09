@@ -6,7 +6,7 @@ project(async VERSION ${PROJECT_VESRION})
 
 
 add_executable(async main.cpp)
-add_library(libasync async.cpp)
+add_library(libasync SHARED async.cpp async.h)
 
 set_target_properties(async PROPERTIES
     CXX_STANDARD 17
